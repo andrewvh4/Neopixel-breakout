@@ -1,0 +1,203 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MRDT_Connectors:AndersonPP Conn1
+U 1 1 5BDF12CB
+P 3450 3250
+F 0 "Conn1" H 3656 3637 60  0000 C CNN
+F 1 "AndersonPP" H 3656 3531 60  0000 C CNN
+F 2 "MRDT_Connectors:Anderson_2_Horisontal_Side_by_Side" H 3300 2700 60  0001 C CNN
+F 3 "" H 3300 2700 60  0001 C CNN
+	1    3450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:AndersonPP Conn1
+U 2 1 5BDF13DA
+P 3450 3450
+F 0 "Conn1" H 3600 3400 60  0000 C CNN
+F 1 "AndersonPP" H 3500 3400 60  0001 C CNN
+F 2 "MRDT_Connectors:Anderson_2_Horisontal_Side_by_Side" H 3300 2900 60  0001 C CNN
+F 3 "" H 3300 2900 60  0001 C CNN
+	2    3450 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5BDF1480
+P 5450 3300
+F 0 "A1" H 5800 2350 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5450 4800 50  0000 C CNN
+F 2 "Module:Arduino_Nano_WithMountingHoles" H 5600 2350 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5450 2300 50  0001 C CNN
+	1    5450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:Molex_SL_03 Conn2
+U 1 1 5BDF1539
+P 7500 3150
+F 0 "Conn2" H 7627 3358 60  0000 L CNN
+F 1 "Molex_SL_03" H 7627 3252 60  0000 L CNN
+F 2 "MRDT_Connectors:MOLEX_SL_03_Horizontal" H 7500 3150 60  0001 C CNN
+F 3 "" H 7500 3150 60  0001 C CNN
+	1    7500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BDF16BD
+P 3950 3200
+F 0 "#PWR0101" H 3950 2950 50  0001 C CNN
+F 1 "GND" H 3950 3300 50  0000 C CNN
+F 2 "" H 3950 3200 50  0001 C CNN
+F 3 "" H 3950 3200 50  0001 C CNN
+	1    3950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5BDF16FC
+P 4100 3300
+F 0 "#PWR0102" H 4100 3150 50  0001 C CNN
+F 1 "+5V" H 4115 3473 50  0000 C CNN
+F 2 "" H 4100 3300 50  0001 C CNN
+F 3 "" H 4100 3300 50  0001 C CNN
+	1    4100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3150 3950 3150
+Wire Wire Line
+	3950 3150 3950 3200
+Wire Wire Line
+	3850 3350 4100 3350
+Wire Wire Line
+	4100 3350 4100 3300
+$Comp
+L power:+5V #PWR0103
+U 1 1 5BDF1836
+P 5650 2200
+F 0 "#PWR0103" H 5650 2050 50  0001 C CNN
+F 1 "+5V" H 5665 2373 50  0000 C CNN
+F 2 "" H 5650 2200 50  0001 C CNN
+F 3 "" H 5650 2200 50  0001 C CNN
+	1    5650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BDF188A
+P 5800 2250
+F 0 "C1" V 5548 2250 50  0000 C CNN
+F 1 "10u" V 5639 2250 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5838 2100 50  0001 C CNN
+F 3 "~" H 5800 2250 50  0001 C CNN
+	1    5800 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 2200 5650 2250
+Connection ~ 5650 2250
+Wire Wire Line
+	5650 2250 5650 2300
+$Comp
+L power:GND #PWR0104
+U 1 1 5BDF19C5
+P 6000 2300
+F 0 "#PWR0104" H 6000 2050 50  0001 C CNN
+F 1 "GND" H 6000 2400 50  0000 C CNN
+F 2 "" H 6000 2300 50  0001 C CNN
+F 3 "" H 6000 2300 50  0001 C CNN
+	1    6000 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2250 6000 2250
+Wire Wire Line
+	6000 2250 6000 2300
+$Comp
+L power:GND #PWR0105
+U 1 1 5BDF1A19
+P 5600 4350
+F 0 "#PWR0105" H 5600 4100 50  0001 C CNN
+F 1 "GND" H 5600 4200 50  0000 C CNN
+F 2 "" H 5600 4350 50  0001 C CNN
+F 3 "" H 5600 4350 50  0001 C CNN
+	1    5600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4300 5550 4300
+Wire Wire Line
+	5600 4300 5600 4350
+Connection ~ 5550 4300
+Wire Wire Line
+	5550 4300 5600 4300
+$Comp
+L power:GND #PWR0106
+U 1 1 5BDF1CC6
+P 7250 3150
+F 0 "#PWR0106" H 7250 2900 50  0001 C CNN
+F 1 "GND" H 7250 3000 50  0000 C CNN
+F 2 "" H 7250 3150 50  0001 C CNN
+F 3 "" H 7250 3150 50  0001 C CNN
+	1    7250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5BDF1DB7
+P 7250 2850
+F 0 "#PWR0107" H 7250 2700 50  0001 C CNN
+F 1 "+5V" H 7265 3023 50  0000 C CNN
+F 2 "" H 7250 2850 50  0001 C CNN
+F 3 "" H 7250 2850 50  0001 C CNN
+	1    7250 2850
+	1    0    0    -1  
+$EndComp
+Text GLabel 7250 3000 0    50   Input ~ 0
+Neo_Sig
+Wire Wire Line
+	7300 3100 7250 3100
+Wire Wire Line
+	7250 3100 7250 3150
+Wire Wire Line
+	7300 3000 7250 3000
+Wire Wire Line
+	7300 2900 7250 2900
+Wire Wire Line
+	7250 2900 7250 2850
+Text GLabel 4950 3800 0    50   Input ~ 0
+Neo_Sig
+Text Notes 4550 3750 0    50   ~ 0
+SPI_MOSI
+$Comp
+L power:+5V #PWR0108
+U 1 1 5BDF2203
+P 4850 3950
+F 0 "#PWR0108" H 4850 3800 50  0001 C CNN
+F 1 "+5V" H 4750 4000 50  0000 C CNN
+F 2 "" H 4850 3950 50  0001 C CNN
+F 3 "" H 4850 3950 50  0001 C CNN
+	1    4850 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3950 4850 4000
+Wire Wire Line
+	4850 4000 4950 4000
+$EndSCHEMATC
